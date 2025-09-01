@@ -4,48 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Tiago Padilha</title>
+    <title>Contato - Tiago Padilha</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav class="menu">
+        <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="index.html">Sobre Mim</a></li>
                 <li><a href="formacao.html">Formação</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <h1>Contato</h1>
         <section class="contato">
-            <h1>Contato</h1>
-            <p>Preencha o formulário abaixo para enviar uma mensagem diretamente para mim.</p>
-
             <form id="formContato">
-                <!-- Campo de Nome -->
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
 
-                <!-- Campo de Email -->
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
 
-                <!-- Campo de Mensagem -->
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." required></textarea>
 
-                <!-- Botão de Envio -->
                 <button type="submit">Enviar Mensagem</button>
             </form>
         </section>
     </main>
 
-    <!-- Script simples para teste -->
     <script>
         document.getElementById('formContato').addEventListener('submit', function (e) {
             e.preventDefault() // Impede o envio real do formulário
@@ -57,7 +49,7 @@
 
             // Exibindo um alert simples onde mostra os dados preenchidos
             alert(
-                `Mensagem teste\n\n` +
+                `NÃO IMPLEMENTADO\n\n` +
                 `Nome: ${nome}\n` +
                 `E-mail: ${email}\n` +
                 `Mensagem: ${mensagem}`

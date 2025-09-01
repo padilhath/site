@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Tiago Padilha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Projetos</h1>
+        <section>
+            <h2>Portfólio</h2>
+            <p>
+                Site de portfólio desenvolvido para a Atividade Prática da disciplina Fundamentos da Programação Web.
+            </p>
+            <a href="https://github.com/padilhath/site" target="_blank">Repositório no GitHub</a>
+        </section>
+
+        <section>
+            <h2>AC Mouse Controller</h2>
+            <p>
+                Um script Python "simples" para <a href="https://github.com/AndersMalmgren/FreePIE"
+                    target="_blank"><strong>FreePIE</strong></a> que utiliza ferramentas de joystick virtual do <a
+                    href="https://github.com/shauleiz/vJoy"><strong>vJoy</strong></a> para transformar a experiencia de
+                jogar Assetto Corsa utilizando o teclado e mouse em algo muito mais preciso e agradável.
+            </p>
+            <p>
+                O projeto ainda não possui documentação adequada tendo em vista que inicialmente desenvolvi para uso
+                próprio.
+            </p>
+            <a href="https://github.com/padilhath/ac-mouse-controller" target="_blank">Repositório no GitHub</a>
+        </section>
+
+        <section>
+            <h2>Cstrike</h2>
+            <p>
+                Principal projeto que desenvolvi anteriormente, entretanto por se tratar de um projeto de código fechado
+                infelizmente não posso compartilhar o código fonte.
+            </p>
+            <p>
+                Era em um servidor inspirado no jogo <a href="https://www.dayz.com/" target="_blank">DayZ</a>
+                para o <a href="https://github.com/multitheftauto/mtasa-blue" target="_blank">MTA</a> (resumidamente uma
+                modificação para o Grand Theft Auto: San Andreas que permite a criação de servidores multiplayer e
+                scripts em Lua que modificam o funcionamento original do jogo).
+            </p>
+            <p>
+                Implementei e refatorei sistemas como o de inventário, fabricação de itens, sede, fome, frio, dano,
+                e outros.
+            </p>
+            <p>
+                O projeto se dividia em duas partes principais: o servidor para o MTA e o BOT para o Discord onde ambos
+                se comunicavam atráves de requests HTTP com o BOT tendo como principal função a "whitelist", um sistema
+                que limitava o acesso dos jogadores ao servidor.
+            </p>
+            <p>
+                No desenvolvimento do BOT inicialmente utilizei Python e após migrei para Node JS. Já no desenvolvimento
+                do servidor utilizei Lua e SQL (SQLite).
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,12 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     min-height: 100dvh;
-    overflow-y: scroll;
     width: 100%;
     font-family: Arial, sans-serif;
     line-height: 1.5;
@@ -20,14 +18,14 @@ header {
     background: #333333;
 }
 
-.menu ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 1em;
 }
 
-.menu ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -39,19 +37,24 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
 }
 
 section {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 800px;
     padding: 1em;
-    margin: 1em;
+    gap: 0.5em;
 }
 
-h1,
-h2 {
+section ul li {
+    margin-left: 1.5em;
+}
+
+h1 {
     text-align: center;
-    margin-bottom: 0.5em;
+    margin: 0.3em;
 }
 
 .contato {
@@ -64,38 +67,36 @@ h2 {
     box-shadow: 0 1em 1em rgba(0, 0, 0, 0.2);
 }
 
-.contato h1 {
-    color: white;
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
 }
 
 form label {
     font-weight: bold;
-    margin-top: 10px;
-    display: block;
 }
 
 form input,
 form textarea {
-    width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
+    margin: 0 0 1em;
+    border: 1px solid #777777;
+    border-radius: 0.5em;
+    font-size: 1em;
 }
 
 form button {
-    background: #0077cc;
+    background: #0055cc;
     color: white;
-    padding: 12px 20px;
+    padding: 1em;
     border: none;
-    border-radius: 6px;
+    border-radius: 0.5em;
     cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s;
+    font-size: 1em;
+    transition: background 0.25s;
 }
 
 form button:hover {
-    background: #005fa3;
+    background: #0033cc;
 }
